@@ -14,8 +14,8 @@ window.SITE = {
   phoneDisplay: "8828 5392",
   phoneIntl: "6588285392",          // country code + number, no spaces or "+"
 
-  // WhatsApp number (same format as above). LEAVE EMPTY until the owner
-  // confirms it: the WhatsApp buttons then show as "to confirm".
+  // WhatsApp number (same format as above). Leave it empty to hide the
+  // WhatsApp buttons.
   whatsappNumber: "6588285392",
   whatsappMessage: "Hi OneStop Cooling, I'd like to book an aircon service.",
   whatsappMessageZh: "你好 OneStop Cooling，我想预约冷气保养。",   // used when the visitor reads the Chinese page
