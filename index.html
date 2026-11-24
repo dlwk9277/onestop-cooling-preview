@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>OneStop Cooling: aircon servicing and repair, Sengkang</title>
-<meta name="description" content="OneStop Cooling: aircon servicing, general cleaning, repair and chemical overhaul in Sengkang, Singapore. Servicing from $40. Call 8828 5392.">
+<title data-i18n-title-tag="title">OneStop Cooling: aircon servicing and repair, Sengkang</title>
+<meta name="description" data-i18n-content="desc" content="OneStop Cooling: aircon servicing, general cleaning, repair and chemical overhaul in Sengkang, Singapore. Servicing from $40. Call 8828 5392.">
 <meta name="theme-color" content="#1b2f8a">
 <meta property="og:type" content="website">
-<meta property="og:title" content="OneStop Cooling: aircon servicing and repair, Sengkang">
-<meta property="og:description" content="Aircon servicing, cleaning, repair and chemical overhaul. Servicing from $40. Call 8828 5392.">
-
+<meta property="og:title" data-i18n-content="title" content="OneStop Cooling: aircon servicing and repair, Sengkang">
+<meta property="og:description" data-i18n-content="ogdesc" content="Aircon servicing, cleaning, repair and chemical overhaul. Servicing from $40. Call 8828 5392.">
+<meta property="og:image" content="assets/img/logo.jpg">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/stencil.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="css/style.css">
@@ -34,20 +34,21 @@
 </script>
 </head>
 <body id="top">
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
 <header class="bar">
   <div class="wrap bar__in">
-    <a class="bar__logo" href="#top" aria-label="OneStop Cooling, home">
-      <img src="assets/img/logo.jpg" width="640" height="322" alt="OneStop Cooling: aircon servicing and repair">
+    <a class="bar__logo" href="#top" aria-label="OneStop Cooling, home" data-i18n-aria-label="home">
+      <img src="assets/img/logo.jpg" width="640" height="322" alt="OneStop Cooling: aircon servicing and repair" data-i18n-alt="logo">
     </a>
-    <nav class="bar__nav" aria-label="Main">
-      <a href="#services">Services</a>
-      <a href="#prices">Prices</a>
-      <a href="#work">Our work</a>
-      <a href="#contact">Contact</a>
+    <nav class="bar__nav" aria-label="Main" data-i18n-aria-label="mainnav">
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#prices" data-i18n="nav.prices">Prices</a>
+      <a href="#work" data-i18n="nav.work">Our work</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
-    <a class="btn btn--call bar__call" data-tel href="tel:+6588285392">Call <span data-phone-text>8828&nbsp;5392</span></a>
+    <button class="lang" id="lang" type="button" aria-label="切换到中文"><span lang="zh-Hans">中文</span></button>
+    <a class="btn btn--call bar__call" data-tel href="tel:+6588285392"><span data-i18n="call">Call</span> <span data-phone-text>8828&nbsp;5392</span></a>
   </div>
 </header>
 
@@ -58,19 +59,20 @@
   <div class="wrap hero__in">
     <div class="hero__text">
 
-      <h1>Aircon servicing and repair, <span class="mark">from $40</span>.</h1>
-      <p class="lead">Based in Sengkang, since <span data-since>2021</span>. Servicing, general cleaning, repair and chemical overhaul for your home aircon. Clear prices below. Call to book a slot.</p>
+      <h1 data-i18n="hero.h1">Aircon servicing and repair, <span class="mark">from $40</span>.</h1>
+      <p class="lead" data-i18n="hero.lead">Based in Sengkang, since <span data-since>2021</span>. Servicing, general cleaning, repair and chemical overhaul for your home aircon. Clear prices below. Call to book a slot.</p>
       <div class="cta">
-        <a class="btn btn--call btn--lg" data-tel href="tel:+6588285392">Call <span data-phone-text>8828&nbsp;5392</span></a>
-        <a class="btn btn--wa btn--lg" data-wa href="#contact"><span class="wa-label">WhatsApp</span></a>
+        <a class="btn btn--call btn--lg" data-tel href="tel:+6588285392"><span data-i18n="call">Call</span> <span data-phone-text>8828&nbsp;5392</span></a>
+        <a class="btn btn--wa btn--lg" data-wa href="#contact" hidden><span class="wa-label">WhatsApp</span></a>
       </div>
+      <p class="hero__est"><a class="more more--light" href="#estimate" data-i18n="hero.est">Work out your price in 10 seconds</a></p>
       <ul class="facts">
-        <li>Mon to Sun, 10:30am to 6pm <em class="flag" data-hours-flag>to confirm</em></li>
+        <li data-hours-wrap hidden><span data-hours>Mon to Sun, 10:30am to 6pm</span></li>
         <li>172C Sengkang East Drive</li>
       </ul>
     </div>
     <figure class="hero__img">
-      <img src="assets/img/blower-coil.jpg" width="880" height="1122" alt="Aircon indoor unit taken apart, showing the blower wheel and a clean coil" fetchpriority="high">
+      <img src="assets/img/blower-coil.webp" width="880" height="1122" alt="Aircon indoor unit taken apart, showing the blower wheel and a clean coil" data-i18n-alt="alt.blower" fetchpriority="high">
     </figure>
   </div>
 </section>
@@ -78,27 +80,27 @@
 <!-- SERVICES -->
 <section class="sec" id="services">
   <div class="wrap">
-    <h2>What we do</h2>
+    <h2 data-i18n="svc.h2">What we do</h2>
     <div class="cards">
       <article class="card">
-        <h3>Aircon servicing</h3>
-        <p>Regular servicing to keep your aircon cooling well. Price depends on how many fan coils you have.</p>
-        <a class="more" href="#prices">See servicing prices</a>
+        <h3 data-i18n="svc1.h">Aircon servicing</h3>
+        <p data-i18n="svc1.p">Regular servicing to keep your aircon cooling well. Price depends on how many fan coils you have.</p>
+        <a class="more" href="#prices" data-i18n="svc1.a">See servicing prices</a>
       </article>
       <article class="card">
-        <h3>Chemical overhaul</h3>
-        <p>The unit is taken apart and the coil is washed with chemicals. Priced by BTU size and number of fan coils.</p>
-        <a class="more" href="#prices">See overhaul prices</a>
+        <h3 data-i18n="svc2.h">Chemical overhaul</h3>
+        <p data-i18n="svc2.p">The unit is taken apart and the coil is washed with chemicals. Priced by BTU size and number of fan coils.</p>
+        <a class="more" href="#prices" data-i18n="svc2.a">See overhaul prices</a>
       </article>
       <article class="card">
-        <h3>Aircon repair</h3>
-        <p>Aircon not cold or acting up? Call us and tell us what it is doing. Gas top-up is available.</p>
-        <a class="more" href="#contact">Call to book</a>
+        <h3 data-i18n="svc3.h">Aircon repair</h3>
+        <p data-i18n="svc3.p">Aircon not cold or acting up? Call us and tell us what it is doing. Gas top-up is available.</p>
+        <a class="more" href="#contact" data-i18n="svc.callbook">Call to book</a>
       </article>
       <article class="card">
-        <h3>General cleaning</h3>
-        <p>Cleaning for filters, covers and the parts you can see, so the air coming out smells and feels fresh.</p>
-        <a class="more" href="#contact">Call to book</a>
+        <h3 data-i18n="svc4.h">General cleaning</h3>
+        <p data-i18n="svc4.p">Cleaning for filters, covers and the parts you can see, so the air coming out smells and feels fresh.</p>
+        <a class="more" href="#contact" data-i18n="svc.callbook">Call to book</a>
       </article>
     </div>
   </div>
@@ -107,16 +109,16 @@
 <!-- BEFORE / AFTER -->
 <section class="sec sec--tint" id="difference">
   <div class="wrap">
-    <h2>What comes out of a dirty aircon</h2>
-    <p class="sub">Photos from real jobs.</p>
+    <h2 data-i18n="ba.h2">What comes out of a dirty aircon</h2>
+    <p class="sub" data-i18n="ba.sub">Photos from real jobs.</p>
     <div class="pair">
       <figure>
-        <img src="assets/img/foam-dirty.jpg" width="880" height="1085" alt="Dirty foam and grime running off an aircon coil during a chemical wash" loading="lazy">
-        <figcaption><b>During the wash</b> Dirt and foam coming off the coil</figcaption>
+        <img src="assets/img/foam-dirty.webp" width="880" height="1085" alt="Dirty foam and grime running off an aircon coil during a chemical wash" data-i18n-alt="alt.foamdirty" loading="lazy">
+        <figcaption data-i18n="ba.c1"><b>During the wash</b> Dirt and foam coming off the coil</figcaption>
       </figure>
       <figure>
-        <img src="assets/img/coil-clean.jpg" width="880" height="1033" alt="A clean aircon coil held up after washing" loading="lazy">
-        <figcaption><b>Afterwards</b> The coil, clean</figcaption>
+        <img src="assets/img/coil-clean.webp" width="880" height="1033" alt="A clean aircon coil held up after washing" data-i18n-alt="alt.coilclean" loading="lazy">
+        <figcaption data-i18n="ba.c2"><b>Afterwards</b> The coil, clean</figcaption>
       </figure>
     </div>
   </div>
@@ -125,65 +127,79 @@
 <!-- PRICES -->
 <section class="sec" id="prices">
   <div class="wrap">
-    <h2>Prices</h2>
-    <p class="sub">One-time prices. Chemical overhaul gets cheaper per unit when you do more fan coils.</p>
+    <h2 data-i18n="pr.h2">Prices</h2>
+    <p class="sub" data-i18n="pr.sub">One-time prices. Chemical overhaul gets cheaper per unit when you do more fan coils.</p>
+
+    <div class="est" id="estimate" role="group" aria-labelledby="est-h" hidden>
+      <div class="est__in">
+        <h3 id="est-h" data-i18n="est.h">Work out your price</h3>
+        <fieldset class="opt"><legend data-i18n="est.service">Service</legend><div class="pills" id="est-service"></div></fieldset>
+        <fieldset class="opt"><legend id="est-model-legend">Aircon type</legend><div class="pills" id="est-model"></div></fieldset>
+        <fieldset class="opt"><legend data-i18n="est.coils">Fan coils (indoor units)</legend><div class="pills pills--num" id="est-coils"></div>
+          <p class="hint" data-i18n="est.hint">Not sure? Count the indoor units on your walls. Each one is a fan coil.</p></fieldset>
+        <label class="check" id="est-cbd-wrap"><input type="checkbox" id="est-cbd"> <span data-i18n="est.cbd">CBD address <b data-cbd-add></b></span></label>
+      </div>
+      <div class="est__out" aria-live="polite">
+        <p class="est__label" data-i18n="est.label">Your price</p>
+        <p class="est__total" id="est-total"></p>
+        <p class="est__line" id="est-line"></p>
+        <dl class="est__math" id="est-math"></dl>
+        <div class="cta">
+          <a class="btn btn--call btn--light" data-tel href="tel:+6588285392"><span data-i18n="call">Call</span> <span data-phone-text>8828&nbsp;5392</span></a>
+          <a class="btn btn--wa" id="est-wa" href="#contact" hidden><span class="wa-label" data-i18n="est.wa">Book on WhatsApp</span></a>
+        </div>
+        <p class="est__fine" data-i18n="est.fine">Worked out from the price list below. Add-ons such as gas top-up are extra.</p>
+      </div>
+    </div>
+
+    <h3 class="listhead" data-i18n="pr.list">Full price list</h3>
 
     <div class="block">
-      <h3>Standard aircon servicing <small>residential</small></h3>
-      <p class="note">CBD addresses: add <b data-cbd>$15</b>.</p>
+      <h3 data-i18n="pr.sv">Standard aircon servicing <small>residential</small></h3>
+      <p class="note" data-i18n="pr.note">CBD addresses: add <b data-cbd>$15</b>.</p>
       <div class="tbl-wrap"><table class="tbl" id="tbl-servicing"></table></div>
     </div>
 
     <div class="block">
-      <h3>Chemical overhaul</h3>
+      <h3 data-i18n="pr.ov">Chemical overhaul</h3>
       <div class="tbl-wrap"><table class="tbl" id="tbl-overhaul"></table></div>
     </div>
 
     <div class="block">
-      <h3>Add-on services</h3>
+      <h3 data-i18n="pr.add">Add-on services</h3>
       <ul class="addons" id="addons"></ul>
     </div>
-
-    <p class="ph-note"><b>Preview note:</b> prices are copied from the owner's price list. To be re-checked before launch.</p>
   </div>
 </section>
 
 <!-- GALLERY -->
 <section class="sec sec--tint" id="work">
   <div class="wrap">
-    <h2>Our work</h2>
-    <p class="sub">Photos from real servicing jobs.</p>
+    <h2 data-i18n="work.h2">Our work</h2>
+    <p class="sub" data-i18n="work.sub">Photos from real servicing jobs.</p>
     <div class="grid">
-      <figure><img src="assets/img/dismantled.jpg" width="880" height="1116" alt="Aircon indoor unit dismantled in a bathroom for chemical cleaning" loading="lazy"><figcaption>Unit dismantled</figcaption></figure>
-      <figure><img src="assets/img/indoor-open.jpg" width="880" height="1279" alt="Aircon casing opened up, with filters laid out" loading="lazy"><figcaption>Casing opened up</figcaption></figure>
-      <figure><img src="assets/img/coil-top.jpg" width="880" height="1104" alt="Aircon coil removed from the unit, with copper pipes at the top" loading="lazy"><figcaption>Coil removed</figcaption></figure>
-      <figure><img src="assets/img/foam-blue.jpg" width="880" height="1100" alt="Aircon coil covered in white and blue cleaning foam" loading="lazy"><figcaption>Chemical wash</figcaption></figure>
-      <figure class="wide"><img src="assets/img/technician.jpg" width="880" height="635" alt="OneStop Cooling technician in a mask cleaning up after dismantling an aircon" loading="lazy"><figcaption>On the job</figcaption></figure>
+      <figure><img src="assets/img/dismantled.webp" width="880" height="1116" alt="Aircon indoor unit dismantled in a bathroom for chemical cleaning" data-i18n-alt="alt.g1" loading="lazy"><figcaption data-i18n="work.g1">Unit dismantled</figcaption></figure>
+      <figure><img src="assets/img/indoor-open.webp" width="880" height="1279" alt="Aircon casing opened up, with filters laid out" data-i18n-alt="alt.g2" loading="lazy"><figcaption data-i18n="work.g2">Casing opened up</figcaption></figure>
+      <figure><img src="assets/img/coil-top.webp" width="880" height="1104" alt="Aircon coil removed from the unit, with copper pipes at the top" data-i18n-alt="alt.g3" loading="lazy"><figcaption data-i18n="work.g3">Coil removed</figcaption></figure>
+      <figure><img src="assets/img/foam-blue.webp" width="880" height="1100" alt="Aircon coil covered in white and blue cleaning foam" data-i18n-alt="alt.g4" loading="lazy"><figcaption data-i18n="work.g4">Chemical wash</figcaption></figure>
+      <figure class="wide"><img src="assets/img/technician.webp" width="880" height="635" alt="OneStop Cooling technician in a mask cleaning up after dismantling an aircon" data-i18n-alt="alt.g5" loading="lazy"><figcaption data-i18n="work.g5">On the job</figcaption></figure>
     </div>
   </div>
 </section>
 
 <!-- AREAS -->
-<section class="sec" id="areas">
+<section class="sec" id="areas" hidden>
   <div class="wrap">
-    <h2>Areas we cover</h2>
-    <div class="ph" id="areas-ph">
-      <span class="ph__tag">Placeholder</span>
-      <p>List of areas to be confirmed with the owner (for example: which estates around Sengkang, Punggol, Hougang).</p>
-    </div>
-    <ul class="chips" id="areas-list" hidden></ul>
+    <h2 data-i18n="areas.h2">Areas we cover</h2>
+    <ul class="chips" id="areas-list"></ul>
   </div>
 </section>
 
 <!-- REVIEWS -->
-<section class="sec sec--tint" id="reviews">
+<section class="sec sec--tint" id="reviews" hidden>
   <div class="wrap">
-    <h2>What customers say</h2>
-    <div class="ph" id="reviews-ph">
-      <span class="ph__tag">Placeholder</span>
-      <p>Real Google reviews go here, once the owner agrees to us quoting them. No made-up reviews.</p>
-    </div>
-    <div class="quotes" id="reviews-list" hidden></div>
+    <h2 data-i18n="rev.h2">What customers say</h2>
+    <div class="quotes" id="reviews-list"></div>
   </div>
 </section>
 
@@ -191,20 +207,20 @@
 <section class="sec sec--blue" id="contact">
   <div class="wrap contact">
     <div class="contact__text">
-      <h2>Book a service</h2>
-      <p class="lead">Call us, tell us your aircon type and how many fan coils, and we will arrange a time.</p>
+      <h2 data-i18n="ct.h2">Book a service</h2>
+      <p class="lead" data-i18n="ct.lead">Call us, tell us your aircon type and how many fan coils, and we will arrange a time.</p>
       <div class="cta">
-        <a class="btn btn--call btn--lg btn--light" data-tel href="tel:+6588285392">Call <span data-phone-text>8828&nbsp;5392</span></a>
-        <a class="btn btn--wa btn--lg" data-wa href="#contact"><span class="wa-label">WhatsApp</span></a>
+        <a class="btn btn--call btn--lg btn--light" data-tel href="tel:+6588285392"><span data-i18n="call">Call</span> <span data-phone-text>8828&nbsp;5392</span></a>
+        <a class="btn btn--wa btn--lg" data-wa href="#contact" hidden><span class="wa-label">WhatsApp</span></a>
       </div>
       <dl class="info">
-        <div><dt>Hours</dt><dd><span data-hours>Mon to Sun, 10:30am to 6pm</span> <em class="flag" data-hours-flag>to confirm</em></dd></div>
-        <div><dt>Address</dt><dd><span data-address>172C Sengkang East Drive, #10-172, Singapore 543172</span><br><a class="more more--light" data-map-link href="https://www.google.com/maps/search/?api=1&amp;query=172C+Sengkang+East+Drive">Open in Google Maps</a></dd></div>
-        <div><dt>Phone</dt><dd><a data-tel href="tel:+6588285392"><span data-phone-text>8828&nbsp;5392</span></a></dd></div>
+        <div data-hours-wrap hidden><dt data-i18n="ct.hours">Hours</dt><dd><span data-hours>Mon to Sun, 10:30am to 6pm</span></dd></div>
+        <div><dt data-i18n="ct.addr">Address</dt><dd><span data-address>172C Sengkang East Drive, #10-172, Singapore 543172</span><br><a class="more more--light" data-i18n="ct.map" data-map-link href="https://www.google.com/maps/search/?api=1&amp;query=172C+Sengkang+East+Drive">Open in Google Maps</a></dd></div>
+        <div><dt data-i18n="ct.phone">Phone</dt><dd><a data-tel href="tel:+6588285392"><span data-phone-text>8828&nbsp;5392</span></a></dd></div>
       </dl>
     </div>
     <div class="contact__map">
-      <iframe data-map title="Map to OneStop Cooling, Sengkang East Drive" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=172C+Sengkang+East+Drive+543172&amp;z=16&amp;output=embed"></iframe>
+      <iframe data-map title="Map to OneStop Cooling, Sengkang East Drive" data-i18n-title="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=172C+Sengkang+East+Drive+543172&amp;z=16&amp;output=embed"></iframe>
     </div>
   </div>
 </section>
@@ -213,17 +229,18 @@
 
 <footer class="foot">
   <div class="wrap">
-    <p><b>OneStop Cooling</b> &middot; Aircon Servicing and Repair &middot; Sengkang, Singapore</p>
+    <p data-i18n="foot"><b>OneStop Cooling</b> &middot; Aircon Servicing and Repair &middot; Sengkang, Singapore</p>
   </div>
 </footer>
 
 <!-- Sticky call bar, every screen size on phones -->
-<div class="dock" role="group" aria-label="Contact">
-  <a class="btn btn--call" data-tel href="tel:+6588285392">Call <span data-phone-text>8828&nbsp;5392</span></a>
-  <a class="btn btn--wa" data-wa href="#contact"><span class="wa-label">WhatsApp</span></a>
+<div class="dock" role="group" aria-label="Contact" data-i18n-aria-label="dock">
+  <a class="btn btn--call" data-tel href="tel:+6588285392"><span data-i18n="call">Call</span> <span data-phone-text>8828&nbsp;5392</span></a>
+  <a class="btn btn--wa" data-wa href="#contact" hidden><span class="wa-label">WhatsApp</span></a>
 </div>
 
 <script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

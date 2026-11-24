@@ -18,6 +18,7 @@ window.SITE = {
   // confirms it: the WhatsApp buttons then show as "to confirm".
   whatsappNumber: "6588285392",
   whatsappMessage: "Hi OneStop Cooling, I'd like to book an aircon service.",
+  whatsappMessageZh: "你好 OneStop Cooling，我想预约冷气保养。",   // used when the visitor reads the Chinese page
 
   // Opening hours. Set hoursConfirmed to true once the owner confirms them.
   hours: "Mon to Sun, 10:30am to 6pm",
