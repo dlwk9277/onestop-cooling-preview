@@ -25,7 +25,7 @@ window.SITE = {
   hoursConfirmed: false,
 
   address: "172C Sengkang East Drive, #10-172, Singapore 543172",
-  mapQuery: "172C Sengkang East Drive #10-172, Singapore 543172",
+  mapQuery: "172C Sengkang East Drive, Singapore 543172",
   since: 2021,
 
   // Areas covered: add names between the quotes to replace the placeholder.
@@ -37,27 +37,37 @@ window.SITE = {
   reviews: [],
 
   // ---------- Prices (dollars) ----------
-  // Chemical overhaul, one time. Index 0 to 4 = 1 to 5 fan coils.
-  overhaul: [
-    { label: "9,000 to 12,000 BTU", prices: [150, 285, 405, 510, 600] },
-    { label: "18,000 BTU",          prices: [180, 342, 486, 612, 720] },
-    { label: "24,000 BTU",          prices: [200, 380, 540, 680, 800] }
-  ],
-  overhaulDiscount: [0, 5, 10, 15, 20],   // % off for 1 to 5 fan coils
-
-  // Standard (residential) servicing, one time. 1 to 5 fan coils.
+  // Normal service, one time. The five numbers are for 1, 2, 3, 4, 5 units.
   servicing: [
-    { label: "All models", prices: [40, 70, 100, 130, 160] },
-    { label: "Fujitsu",    prices: [60, 110, 160, 210, 260] }
+    { label: "Others",              prices: [60, 90, 110, 140, 170] },
+    { label: "Samsung/Fujitsu",    prices: [90, 170, 250, 330, 410] }
   ],
   cbdSurcharge: 15,                       // extra for CBD addresses
 
+  // Chemical overhaul, price for ONE unit. More units = price x units.
+  overhaul: [
+    { label: "9,000 to 12,000 BTU", price: 160 },
+    { label: "18,000 BTU",          price: 210 },
+    { label: "24,000 BTU",          price: 260 }
+  ],
+  // Multi-unit discount for overhaul, in %, for 1, 2, 3, 4, 5 units.
+  // All 0 = no discount. Example: [0, 5, 10, 15, 20]
+  overhaulDiscount: [0, 0, 0, 0, 0],
+
+  gas: [
+    { name: "R410", price: "$130 to $150" },
+    { name: "R22",  price: "$100 to $130" },
+    { name: "R32",  price: "$150 to $200" }
+  ],
   addons: [
-    { name: "Condenser chemical cleaning", price: "$120" },
-    { name: "High pressure steamer",       price: "$80" },
-    { name: "High pressure wash",          price: "$60" },
-    { name: "Top-up gas (R410)",           price: "$80 to $120" },
-    { name: "Top-up gas (R22)",            price: "$60 to $80" },
-    { name: "Checking fee",                price: "$40", note: "offset against the service" }
-  ]
+    { name: "Condenser chemical cleaning", price: "$130" },
+    { name: "High pressure steamer",       price: "$100" },
+    { name: "High pressure wash",          price: "$110" }
+  ],
+  // Transport to the customer's place, e.g. to inspect a fault
+  transport: 60,
+  transportCovered: true,    // true = the fee is covered by (deducted from) the service if the customer goes ahead
+
+  // Quick-message buttons under "Aircon repair" (they open WhatsApp)
+  problems: ["Not cold", "Leaking water", "Noisy", "Smells bad", "Won't turn on"]
 };
